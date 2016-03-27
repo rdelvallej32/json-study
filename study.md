@@ -38,7 +38,47 @@ As it makes sense to you please write the following in JSON format:
 - Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+{ "jason": {
+  "info": {
+    { "pets": {
+      "name" : "kitty",
+      "species": "cat"
+        }
+      },
+    {"interests": {
+      "sports" : ["Red Sox", "Patriots", "Bruinds"]
+      }
+    },
+    {"current residency": {
+        "name": "user info",
+        "address": "12 somewhere over the rainbow ave.",
+        "roomates": [
+          {"person": {
+            "name": "Dave"
+          }
+        },
+          {"person2": {
+            "name": "Miller"
+            }
+          }
+        ]
+      }
+    },
+    {"places lived": [
+      {"place1": {
+        "street": "123 Fake street"
+        }
+      },
+      {"place2": {
+        "street": "2 Muchinfo Road"
+        }
+      }
+    ]
+  }
+}
+}}
+
+
 ```
 
 ...I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +86,63 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+{ "jason": {
+  "info": {
+    { "pets": [
+      {"pet 1": {
+      "name" : "Bob",
+      "species": "Goldfish",
+      "color": "Red",
+      "owner": "Dave",
+        }
+      },
+      {"pet 2": {
+      "name": "Mr. MagicNibbles",
+      "color": "Yellow",
+      "owner": "Dave"
+      }
+      }
+      {"pet 3": {
+        "name": "Kitty",
+        "species": "Cat",
+        "owner": "jason"
+
+      }
+      },
+      ]
+      },
+    {"interests": {
+      "sports" : ["Red Sox", "Patriots", "Bruinds"]
+      }
+    },
+    {"current residency": {
+        "name": "user info",
+        "address": "12 somewhere over the rainbow ave.",
+        "roomates": [
+          {"person": {
+            "name": "Dave"
+          }
+        },
+          {"person2": {
+            "name": "Miller"
+            }
+          }
+        ]
+      }
+    },
+    {"places lived": [
+      {"place1": {
+        "street": "123 Fake street"
+        }
+      },
+      {"place2": {
+        "street": "2 Muchinfo Road"
+        }
+      }
+    ]
+  }
+}
+}}
 ```
 
 ## JSON Methods
@@ -54,7 +150,7 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+No, json only has data. You cannot add behaviors(methods) or it will cause errors.
 ```
 
 ## JSON Comments
@@ -62,5 +158,5 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+No, json is not an object -- it is a string. You cannot add comments or it will cause errors/bugs.
 ```
